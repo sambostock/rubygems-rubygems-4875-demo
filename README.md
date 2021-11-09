@@ -56,3 +56,9 @@ than example (1.0.2) that hasn't been removed in order to install.
 ```
 
 **This is the state te app has been left in.**
+
+### Failing to recover
+
+Neither moving the gem out of the private `source` block, nor removing it from `Gemfile` entirely will work.
+
+This is probably because the `Gemfile.lock` already refers to the private source, and given the intermediate `some_private_gem` is from the private source, Bundler has no reason to assume it should fallback to Rubygems.org.

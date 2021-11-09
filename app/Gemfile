@@ -2,5 +2,9 @@ source 'https://rubygems.org'
 
 source 'http://localhost:9292' do
   gem 'some_private_gem'
-  gem 'example'
+  gem 'example' # NOTE: Simply removing this line will not work
 end
+
+# NOTE: Nor will simply adding the gem to the root
+#
+#   gem 'example'
