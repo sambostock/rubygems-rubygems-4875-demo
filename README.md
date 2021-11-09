@@ -21,3 +21,13 @@ cd geminabox
 bundle install
 bundle exec gem build -C ../some_private_gem some_private_gem.gemspec
 ```
+
+## Publishing Gem locally
+
+Similarly, the gem has already been uploaded to the server, and the DB committed to the repo, but to repeat the process, run the following:
+
+```sh
+cd geminabox
+bundle install
+bundle exec gem inabox --host http://localhost:9292 --overwrite ../some_private_gem/some_private_gem-0.1.0.gem
+```
