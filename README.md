@@ -11,3 +11,13 @@ cd geminabox
 bundle install
 bundle exec rackup # uses localhost:9292 by default
 ```
+
+## Building gem locally
+
+The built version of the gem has already been committed to the repo, but if it needs to be rebuilt, run the following:
+
+```sh
+cd geminabox
+bundle install
+bundle exec gem build -C ../some_private_gem some_private_gem.gemspec
+```
