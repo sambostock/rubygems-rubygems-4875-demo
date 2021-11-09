@@ -8,3 +8,10 @@ end
 # NOTE: Nor will simply adding the gem to the root
 #
 #   gem 'example'
+
+# NOTE: To successfully recover, the source must first be forced
+#
+#   gem 'example', source: 'https://rubygems.org'
+#
+# and the lockfile regenerated (e.g. by running `bundle install`).
+# Afterwards, the explicit source can be removed, or the line deleted entirely.

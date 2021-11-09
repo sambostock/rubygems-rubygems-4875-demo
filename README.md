@@ -62,3 +62,7 @@ than example (1.0.2) that hasn't been removed in order to install.
 Neither moving the gem out of the private `source` block, nor removing it from `Gemfile` entirely will work.
 
 This is probably because the `Gemfile.lock` already refers to the private source, and given the intermediate `some_private_gem` is from the private source, Bundler has no reason to assume it should fallback to Rubygems.org.
+
+### Actually recovering
+
+The source for the gem must be forced, and the `Gemfile.lock` must be regenerated, after which the gem can be removed from the Gemfile entirely. This can be done with an explicit `source:` argument.
