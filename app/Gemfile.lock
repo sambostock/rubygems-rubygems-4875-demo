@@ -1,18 +1,19 @@
 GEM
   remote: http://localhost:9292/
   specs:
+    example (1.0.2)
     some_private_gem (0.1.0)
       example (~> 1.0)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    example (1.0.2)
 
 PLATFORMS
   x86_64-darwin-20
 
 DEPENDENCIES
+  example!
   some_private_gem!
 
 BUNDLED WITH
